@@ -9,93 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TallerIsuzuWebApp
 build_property.RootNamespace = TallerIsuzuWebApp
-build_property.ProjectDir = C:\TallerIsuzuWebApp\TallerIsuzuWebApp\
+build_property.ProjectDir = C:\Users\infobsolorzano\Desktop\TallerIsuzuWebApp\TallerIsuzuWeb\TallerIsuzuWebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\TallerIsuzuWebApp\TallerIsuzuWebApp
+build_property.MSBuildProjectDirectory = C:\Users\infobsolorzano\Desktop\TallerIsuzuWebApp\TallerIsuzuWeb\TallerIsuzuWebApp
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Account/CreateUser.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Account/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGVVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Account/Edit.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Account/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Account/Index.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Account/Login.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/AjusteComisiones.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/AjusteComisiones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxBanVzdGVDb21pc2lvbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/CreateCodigoManoDeObra.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/CreateCodigoManoDeObra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxDcmVhdGVDb2RpZ29NYW5vRGVPYnJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/EditCodigoManoDeObra.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/EditCodigoManoDeObra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxFZGl0Q29kaWdvTWFub0RlT2JyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/GestionManoDeObra.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/GestionManoDeObra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxHZXN0aW9uTWFub0RlT2JyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/ListadoCompleto.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/ListadoCompleto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxMaXN0YWRvQ29tcGxldG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/ObtenerLlamadasComisiones.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/ObtenerLlamadasComisiones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxPYnRlbmVyTGxhbWFkYXNDb21pc2lvbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/PendientesDeAsignar.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/PendientesDeAsignar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxQZW5kaWVudGVzRGVBc2lnbmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/PendientesDeAsignarPrioritarias.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/PendientesDeAsignarPrioritarias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxQZW5kaWVudGVzRGVBc2lnbmFyUHJpb3JpdGFyaWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/CLSL/VerLlamadasAsignadas.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/CLSL/VerLlamadasAsignadas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ0xTTFxWZXJMbGFtYWRhc0FzaWduYWRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Home/Index.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Home/Privacy.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Shared/Error.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/_ViewImports.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/_ViewStart.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TallerIsuzuWebApp/TallerIsuzuWebApp/Views/Shared/_Layout.cshtml]
+[C:/Users/infobsolorzano/Desktop/TallerIsuzuWebApp/TallerIsuzuWeb/TallerIsuzuWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mhe31x0r9w
