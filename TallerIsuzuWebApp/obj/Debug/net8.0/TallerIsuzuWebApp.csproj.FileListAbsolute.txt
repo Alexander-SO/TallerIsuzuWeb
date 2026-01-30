@@ -1,0 +1,160 @@
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\appsettings.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.staticwebassets.runtime.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.exe
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.deps.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.runtimeconfig.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.pdb
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.csproj.AssemblyReference.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.AssemblyInfoInputs.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.AssemblyInfo.cs
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.RazorAssemblyInfo.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.RazorAssemblyInfo.cs
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets\msbuild.TallerIsuzuWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.TallerIsuzuWebApp.props
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TallerIsuzuWebApp.props
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TallerIsuzuWebApp.props
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\bundle\TallerIsuzuWebApp.styles.css
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\projectbundle\TallerIsuzuWebApp.bundle.scp.css
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.csproj.CopyComplete
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\refint\TallerIsuzuWebApp.dll
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.pdb
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.genruntimeconfig.cache
+C:\Users\Chiristian Castillo\Desktop\DaniSoft\MayaCode\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\ref\TallerIsuzuWebApp.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\appsettings.Development.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\appsettings.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.staticwebassets.runtime.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.staticwebassets.endpoints.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.exe
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.deps.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.runtimeconfig.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\TallerIsuzuWebApp.pdb
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Azure.Core.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Azure.Identity.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.ClientModel.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Memory.Data.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.csproj.AssemblyReference.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.AssemblyInfoInputs.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.AssemblyInfo.cs
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.csproj.CoreCompileInputs.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.RazorAssemblyInfo.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.RazorAssemblyInfo.cs
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\bundle\TallerIsuzuWebApp.styles.css
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\scopedcss\projectbundle\TallerIsuzuWebApp.bundle.scp.css
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIs.83DE59B0.Up2Date
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\refint\TallerIsuzuWebApp.dll
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.pdb
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\TallerIsuzuWebApp.genruntimeconfig.cache
+C:\TallerIsuzuWebApp\TallerIsuzuWebApp\obj\Debug\net8.0\ref\TallerIsuzuWebApp.dll

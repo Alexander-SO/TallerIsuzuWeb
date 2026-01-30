@@ -1,0 +1,39 @@
+﻿@model IEnumerable<TallerIsuzuWebApp.Models.CodigoDeManoDeObraViewModel>
+
+@{
+    ViewBag.Title = "Gestión de Códigos de Mano de Obra";
+}
+
+<h2>Gestión de Códigos de Mano de Obra</h2>
+
+<a href="@Url.Action("CreateCodigoManoDeObra", "CLSL")" class="btn btn-primary mb-3">Agregar Nuevo Código</a>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Código de Mano de Obra</th>
+            <th>Valor Comisión</th>
+            <th>Condiciones Adicionales</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CodigoManoDeObra</td>
+                <td>@item.ValorComision</td>
+                <td>@item.CondicionesAdicionales</td>
+                <td>
+                    <a href="@Url.Action("EditCodigoManoDeObra", "CLSL", new { id = item.Id })" class="btn btn-warning btn-sm">Editar</a>
+                    <form action="@Url.Action("DeleteCodigoManoDeObra", "CLSL")" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Está seguro de eliminar este registro?')">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

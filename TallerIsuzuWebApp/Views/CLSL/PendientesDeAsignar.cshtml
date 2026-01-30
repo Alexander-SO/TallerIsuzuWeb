@@ -1,0 +1,268 @@
+﻿@model IEnumerable<LlamadaDeServicioPendienteViewModel>
+
+@{
+    ViewData["Title"] = "Llamadas Pendientes de Asignar";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<style>
+    .prio-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+</style>
+
+@functions {
+    // Mapea 1..10 a un color (verde -> amarillo -> naranja -> rojo -> morado)
+    string GetPriorityColor(int? p)
+    {
+        var n = p ?? 0;
+        if (n <= 0) return "#FFFFFF";       // blanco - no habilitado
+        if (n <= 1) return "#273CF5";       // azul - c. azul - prioridad alta parpadeante bahía 
+        if (n <= 2) return "#273CF5";       // azul - c. azul - prioridad alta no parpadeante producción
+        if (n <= 3) return "#FF000F";       // rojo - c. rojo - reclamo
+        if (n <= 4) return "#0B7A00";       // verde mamá luftdcha - c. verde - servicio preventivo normal
+        if (n <= 5) return "#0B7A00";       // amarillo - c.verde - servicio preventivo correctivo
+        if (n == 9) return "#0B7A00";       // cafe - c.verde - reparaciones
+        if (n <= 6) return "#000000";       // negro - c.negro - preparaciones
+        if (n <= 7) return "#8A8A8A";       // gris - c. gris - pintura 
+        if (n <= 8) return "#FFFFFF";       // blanco - carro nuevo
+        // Código reservado posiblemente para flotas y que Fredy no diga que no se le toma en cuenta
+        if (n == 10) return "#FF7B00";       // naranja - flotas
+        return "#6f42c1";                   // 10 - morado
+    }
+}
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Call ID</th>
+            <th>Internal SN</th>
+            <th>U Placas</th>
+            <th>Item Name</th>
+            <th>Name</th>
+            <th>Servicios</th>
+            <th>Prioridad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var llamada in Model)
+        {
+            <tr>
+                <td>@llamada.CallID</td>
+                <td>@llamada.InternalSN</td>
+                <td>@llamada.UPlacas</td>
+                <td>@llamada.ItemName</td>
+                <td>@llamada.Name</td>
+
+                <!-- NUEVO: Servicios -->
+                <td>@(string.IsNullOrWhiteSpace(llamada.Servicios) ? "-" : llamada.Servicios)</td>
+
+                <!-- NUEVO: Prioridad con punto de color -->
+                <td>
+                    <span class="prio-dot @(llamada.Prioridad == 1 ? "blink" : "")"
+                          style="background-color:@GetPriorityColor(llamada.Prioridad)">
+                    </span>
+                    <span class="ms-1 fw-semibold">@llamada.Prioridad</span>
+                </td>
+
+
+                <!-- Acciones (unificadas en una sola celda) -->
+                <td class="text-nowrap">
+                    <button class="btn btn-primary me-1"
+                            data-bs-toggle="modal" data-bs-target="#assignModal"
+                            onclick="loadModalData('@llamada.CallID', '@llamada.InternalSN', '@llamada.UPlacas', '@llamada.ItemName', '@llamada.Name')">
+                        Asignar Técnico
+                    </button>
+
+                    <button class="btn btn-warning"
+                            data-bs-toggle="modal" data-bs-target="#assignSharedModal"
+                            onclick="loadSharedModalData('@llamada.CallID', '@llamada.InternalSN', '@llamada.UPlacas', '@llamada.ItemName', '@llamada.Name')">
+                        Asignar Compartida
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- MODAL COMPARTIDA -->
+<div class="modal fade" id="assignSharedModal" tabindex="-1" aria-labelledby="assignSharedModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Asignar Llamada Compartida</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form id="assignSharedForm">
+                    <input type="hidden" id="sharedCallID" />
+                    <div class="mb-2">
+                        <label class="form-label">Técnico 1</label>
+                        <select id="sharedTec1" class="form-select tecnico-shared"></select>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Técnico 2</label>
+                        <select id="sharedTec2" class="form-select tecnico-shared"></select>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Técnico 3</label>
+                        <select id="sharedTec3" class="form-select tecnico-shared"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button class="btn btn-success" onclick="saveSharedAssignment()">Asignar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL SIMPLE -->
+<div class="modal fade" id="assignModal" tabindex="-1" aria-labelledby="assignModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="assignModalLabel">Asignar Técnico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="assignForm">
+                    <input type="hidden" id="modalCallID" name="CallID" />
+                    <div class="mb-3">
+                        <label for="modalInternalSN" class="form-label">Internal SN</label>
+                        <input type="text" id="modalInternalSN" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalUPlacas" class="form-label">U Placas</label>
+                        <input type="text" id="modalUPlacas" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalItemName" class="form-label">Item Name</label>
+                        <input type="text" id="modalItemName" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalName" class="form-label">Name</label>
+                        <input type="text" id="modalName" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="technicianSelect" class="form-label">Técnico</label>
+                        <select id="technicianSelect" class="form-select">
+                            <option value="">Seleccione un Técnico</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" onclick="saveAssignment()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadModalData(callID, internalSN, uPlacas, itemName, name) {
+        document.getElementById("modalCallID").value = callID;
+        document.getElementById("modalInternalSN").value = internalSN;
+        document.getElementById("modalUPlacas").value = uPlacas;
+        document.getElementById("modalItemName").value = itemName;
+        document.getElementById("modalName").value = name;
+
+        fetch('@Url.Action("GetTecnicos", "CLSL")')
+            .then(response => response.json())
+            .then(data => {
+                const technicianSelect = document.getElementById("technicianSelect");
+                technicianSelect.innerHTML = '<option value="">Seleccione un Técnico</option>';
+                data.forEach(tech => {
+                    technicianSelect.innerHTML += `<option value="${tech.username}">${tech.nombre}</option>`;
+                });
+            })
+            .catch(error => console.error("Error al obtener técnicos:", error));
+    }
+
+    function saveAssignment() {
+        const callID = document.getElementById("modalCallID").value;
+        const technician = document.getElementById("technicianSelect").value;
+
+        if (!technician) { alert("Seleccione un técnico."); return; }
+
+        fetch('@Url.Action("AsignarLlamada", "CLSL")', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ callID: callID, usuarioLavador: technician }),
+        })
+        .then(r => r.json())
+        .then(data => {
+            alert(data.message);
+            if (data.success) location.reload();
+        })
+        .catch(err => { console.error("Error al guardar la asignación:", err); alert("Error al guardar la asignación."); });
+    }
+</script>
+
+<script>
+    let tecnicosDisponibles = [];
+
+    function loadSharedModalData(callID, internalSN, uPlacas, itemName, name) {
+        document.getElementById("sharedCallID").value = callID;
+
+        fetch('@Url.Action("GetTecnicos", "CLSL")')
+            .then(res => res.json())
+            .then(data => {
+                tecnicosDisponibles = data;
+                document.querySelectorAll('.tecnico-shared').forEach(select => {
+                    select.innerHTML = '<option value="">-- Seleccione técnico --</option>';
+                    data.forEach(tec => {
+                        select.innerHTML += `<option value="${tec.username}">${tec.nombre}</option>`;
+                    });
+                });
+                actualizarSelectsUnicos();
+            });
+    }
+
+    function actualizarSelectsUnicos() {
+        const valores = Array.from(document.querySelectorAll('.tecnico-shared'))
+            .map(s => s.value).filter(v => v !== "");
+
+        document.querySelectorAll('.tecnico-shared').forEach(select => {
+            const valorActual = select.value;
+            select.querySelectorAll('option').forEach(opt => {
+                if (opt.value === "") return;
+                opt.disabled = valores.includes(opt.value) && opt.value !== valorActual;
+            });
+        });
+    }
+
+    document.querySelectorAll('.tecnico-shared').forEach(select => {
+        select.addEventListener('change', actualizarSelectsUnicos);
+    });
+
+    function saveSharedAssignment() {
+        const callID = document.getElementById("sharedCallID").value;
+        const tecnicos = [
+            document.getElementById("sharedTec1").value,
+            document.getElementById("sharedTec2").value,
+            document.getElementById("sharedTec3").value
+        ].filter(t => t !== "");
+
+        if (tecnicos.length === 0) { alert("Debe seleccionar al menos un técnico."); return; }
+
+        const usuariosConcatenados = tecnicos.join(";");
+
+        fetch('@Url.Action("AsignarLlamadaCompartida", "CLSL")', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ callID: callID, usuarioLavador: usuariosConcatenados })
+        })
+        .then(res => res.json())
+        .then(data => { alert(data.message); if (data.success) location.reload(); })
+        .catch(error => { console.error("Error al guardar asignación compartida:", error); alert("Ocurrió un error al guardar la asignación."); });
+    }
+</script>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-09-25T19:07:56.5662414Z||;True|2025-09-03T14:46:04.3292933-06:00||;True|2025-09-01T11:05:00.6240262-06:00||;True|2025-08-31T15:45:37.7211409-06:00||;True|2025-07-24T12:22:19.5191129-06:00||;True|2025-07-24T12:22:07.9546539-06:00||;True|2025-07-24T12:11:24.4521699-06:00||;True|2025-07-24T09:18:10.3813570-06:00||;True|2025-07-24T09:17:33.7762215-06:00||;True|2024-12-19T10:50:43.2805733-06:00||;True|2024-12-10T01:41:24.7361405-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Conn_STOD">
+      <Value>Server=128.1.200.180%3bDatabase=STOD_SAPBONE%3bUser Id=usrstod%3bPassword=stod20%24%3bEncrypt=True%3bTrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

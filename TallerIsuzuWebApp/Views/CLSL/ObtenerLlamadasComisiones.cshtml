@@ -1,0 +1,81 @@
+﻿@model IEnumerable<TallerIsuzuWebApp.Models.LlamadaDeServicioFinalizadaViewModel>
+
+@{
+    ViewData["Title"] = "Llamadas Finalizadas para Comisiones";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th><input type="checkbox" id="selectAll" onclick="toggleAllCheckboxes(this)" /></th>
+            <th># Llamada</th>
+            <th>Fecha Creación</th>
+            <th>Fecha Cierre</th>
+            <th>Chasis</th>
+            <th>Placa</th>
+            <th>Artículo</th>
+            <th>Nombre</th>
+            <th>Encargado</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var llamada in Model)
+        {
+            <tr>
+                <td><input type="checkbox" class="callCheckbox" value="@llamada.CallID" /></td>
+                <td>@llamada.CallID</td>
+                <td>@llamada.FechaCreacion</td>
+                <td>@llamada.FechaCierre</td>
+                <td>@llamada.InternalSN</td>
+                <td>@llamada.UPlacas</td>
+                <td>@llamada.ItemName</td>
+                <td>@llamada.Name</td>
+                <td>@llamada.UsuarioLavador</td>
+                <td>@llamada.Estado</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-success" onclick="actualizarLlamadas()">Actualizar a preComisión</button>
+
+<script>
+    function toggleAllCheckboxes(source) {
+        const checkboxes = document.querySelectorAll('.callCheckbox');
+        checkboxes.forEach(cb => cb.checked = source.checked);
+    }
+
+    function actualizarLlamadas() {
+        const selectedCalls = Array.from(document.querySelectorAll('input.callCheckbox:checked'))
+            .map(cb => parseInt(cb.value));
+
+        if (selectedCalls.length === 0) {
+            alert("No se seleccionaron llamadas.");
+            return;
+        }
+
+        fetch("@Url.Action("ActualizarEstadoPreComision", "CLSL")", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(selectedCalls)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Ocurrió un error al actualizar las llamadas.");
+            });
+    }
+</script>

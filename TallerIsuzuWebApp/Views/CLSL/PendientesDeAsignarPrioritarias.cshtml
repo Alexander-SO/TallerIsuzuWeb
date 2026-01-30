@@ -1,0 +1,166 @@
+﻿@model IEnumerable<LlamadaDeServicioPendienteViewModel>
+
+@{
+    ViewData["Title"] = "Llamadas Pendientes de Asignar";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<style>
+    .prio-dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+</style>
+
+@functions {
+    // Mapea 1..10 a un color (con tu paleta definida)
+    string GetPriorityColor(int? p)
+    {
+        var n = p ?? 0;
+        if (n <= 0) return "#FFFFFF";       // blanco - no habilitado
+        if (n <= 1) return "#273CF5";       // azul - prioridad alta parpadeante
+        if (n <= 2) return "#273CF5";       // azul - no parpadeante
+        if (n <= 3) return "#FF000F";       // rojo - reclamo
+        if (n <= 4) return "#0B7A00";       // verde - preventivo normal
+        if (n <= 5) return "#0B7A00";       // verde - preventivo correctivo
+        if (n == 9) return "#0B7A00";       // verde - preparaciones
+        if (n <= 6) return "#000000";       // negro - preparaciones
+        if (n <= 7) return "#8A8A8A";       // gris - pintura
+        if (n <= 8) return "#FFFFFF";       // blanco - carro nuevo
+        if (n == 10) return "#FF7B00";      // naranja - flotas
+        return "#6f42c1";                   // por defecto
+    }
+}
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Call ID</th>
+            <th>Internal SN</th>
+            <th>U Placas</th>
+            <th>Item Name</th>
+            <th>Name</th>
+            <th>Servicios</th>
+            <th>Prioridad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var llamada in Model)
+        {
+            <tr>
+                <td>@llamada.CallID</td>
+                <td>@llamada.InternalSN</td>
+                <td>@llamada.UPlacas</td>
+                <td>@llamada.ItemName</td>
+                <td>@llamada.Name</td>
+
+                <td>@(string.IsNullOrWhiteSpace(llamada.Servicios) ? "-" : llamada.Servicios)</td>
+
+                <td>
+                    <span class="prio-dot" style="background-color:@GetPriorityColor(llamada.Prioridad)"></span>
+                    <span class="ms-1 fw-semibold">@llamada.Prioridad</span>
+                </td>
+
+                <td class="text-nowrap">
+                    <button class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#assignModal"
+                            onclick="loadModalData('@llamada.CallID', '@llamada.InternalSN', '@llamada.UPlacas', '@llamada.ItemName', '@llamada.Name')">
+                        Asignar llamada prioritarias
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- ÚNICO MODAL -->
+<div class="modal fade" id="assignModal" tabindex="-1" aria-labelledby="assignModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="assignModalLabel">Asignar llamada prioritarias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form id="assignForm">
+                    <input type="hidden" id="modalCallID" name="CallID" />
+                    <div class="mb-3">
+                        <label for="modalInternalSN" class="form-label">Internal SN</label>
+                        <input type="text" id="modalInternalSN" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalUPlacas" class="form-label">U Placas</label>
+                        <input type="text" id="modalUPlacas" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalItemName" class="form-label">Item Name</label>
+                        <input type="text" id="modalItemName" class="form-control" readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalName" class="form-label">Name</label>
+                        <input type="text" id="modalName" class="form-control" readonly />
+                    </div>
+
+                    <!-- SELECT con técnico FIJO (no viene de query) -->
+                    <div class="mb-3">
+                        <label for="technicianSelect" class="form-label">Técnico</label>
+                        <select id="technicianSelect" class="form-select" disabled></select>
+                        <small class="text-muted">Esta pantalla asigna siempre al técnico fijo configurado.</small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" onclick="saveAssignment()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // <<< CONFIGURA AQUÍ EL TÉCNICO FIJO >>>
+    const TECNICO_FIJO_USERNAME = 'lavador.prioritario'; // <-- usuario (Username) real
+    const TECNICO_FIJO_NOMBRE   = 'Lavador Prioritario'; // <-- nombre a mostrar
+
+    function loadModalData(callID, internalSN, uPlacas, itemName, name) {
+        // set datos
+        document.getElementById("modalCallID").value = callID;
+        document.getElementById("modalInternalSN").value = internalSN;
+        document.getElementById("modalUPlacas").value = uPlacas;
+        document.getElementById("modalItemName").value = itemName;
+        document.getElementById("modalName").value = name;
+
+        // llena el select con UNA sola opción fija
+        const technicianSelect = document.getElementById("technicianSelect");
+        technicianSelect.innerHTML = `<option value="${TECNICO_FIJO_USERNAME}" selected>${TECNICO_FIJO_NOMBRE}</option>`;
+    }
+
+    function saveAssignment() {
+        const callID = document.getElementById("modalCallID").value;
+
+        if (!callID) { alert("Falta CallID."); return; }
+
+        // siempre usamos el técnico fijo
+        const technician = TECNICO_FIJO_USERNAME;
+
+        fetch('@Url.Action("AsignarLlamada", "CLSL")', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ callID: callID, usuarioLavador: "none1" }),
+        })
+        .then(r => r.json())
+        .then(data => {
+            alert(data.message);
+            if (data.success) location.reload();
+        })
+        .catch(err => {
+            console.error("Error al guardar la asignación:", err);
+            alert("Error al guardar la asignación.");
+        });
+    }
+</script>

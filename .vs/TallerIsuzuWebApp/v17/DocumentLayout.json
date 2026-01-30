@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\views\\clsl\\ajustecomisiones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\views\\clsl\\ajustecomisiones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\models\\sallcomisioneslavado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\models\\sallcomisioneslavado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\controllers\\clslcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\controllers\\clslcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\views\\clsl\\obtenerllamadascomisiones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\views\\clsl\\obtenerllamadascomisiones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\tallerisuzuwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\tallerisuzuwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|c:\\users\\chiristian castillo\\desktop\\danisoft\\mayacode\\tallerisuzuwebapp\\tallerisuzuwebapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FAE31BCA-B0D2-4F29-A65A-81DF7BCEDA6A}|TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj|solutionrelative:tallerisuzuwebapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:36:07.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Models\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Models\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Models\\UserViewModel.cs",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Models\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:36:01.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AjusteComisiones.cshtml",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\CLSL\\AjusteComisiones.cshtml",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Views\\CLSL\\AjusteComisiones.cshtml",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\CLSL\\AjusteComisiones.cshtml",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Views\\CLSL\\AjusteComisiones.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T21:51:00.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "TallerIsuzuWebApp\\wwwroot\\css\\styles.css",
+              "ViewState": "AQIAANgBAAAAAAAAAAAAwPMBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T16:18:08.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAmwC8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T16:35:59.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SALLComisionesLavado.cs",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Models\\SALLComisionesLavado.cs",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Models\\SALLComisionesLavado.cs",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Models\\SALLComisionesLavado.cs",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Models\\SALLComisionesLavado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T22:02:44.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TallerIsuzuWebApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj",
+              "RelativeToolTip": "TallerIsuzuWebApp\\TallerIsuzuWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-19T05:15:16.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CLSLController.cs",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Controllers\\CLSLController.cs",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Controllers\\CLSLController.cs",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Controllers\\CLSLController.cs",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Controllers\\CLSLController.cs",
+              "ViewState": "AQIAADgCAAAAAAAAAAAcwDwCAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:40:07.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ObtenerLlamadasComisiones.cshtml",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\CLSL\\ObtenerLlamadasComisiones.cshtml",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Views\\CLSL\\ObtenerLlamadasComisiones.cshtml",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\CLSL\\ObtenerLlamadasComisiones.cshtml",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Views\\CLSL\\ObtenerLlamadasComisiones.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T19:59:41.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TallerIsuzuWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Chiristian Castillo\\Desktop\\DaniSoft\\MayaCode\\TallerIsuzuWebApp\\TallerIsuzuWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TallerIsuzuWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAYwF4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T17:43:16.078Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

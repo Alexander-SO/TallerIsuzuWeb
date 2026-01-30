@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid p-0">
+    <!-- Imagen de cabecera -->
+    <div class="hero" style="background-image: url('/img/fondo.jpeg'); background-size: cover; background-position: center; height: 400px; position: relative; width:100%;">
+        <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+        <div class="hero-text text-center text-white" style="position: relative; z-index: 1; top: 50%; transform: translateY(-50%);">
+            <h1 style="font-size: 3rem; font-weight: bold;">TALLERES ISUZU</h1>
+            <p style="font-size: 1.5rem;">Gestión eficiente para nuestros colaboradores</p>
+        </div>
+    </div>
+
+    <!-- Sección de cards -->
+    <div class="cardBox mt-5">
+        <!-- Card Ver Llamadas Asignadas -->
+        <div class="card">
+            <div>
+                <div class="numbers">10</div>
+                <div class="cardName">Llamadas Asignadas</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="list-outline"></ion-icon>
+            </div>
+            <a href="/CLSL/VerLlamadasAsignadas" class="btn btn-primary mt-3">Ir</a>
+        </div>
+
+        <!-- Card Llamadas Completadas -->
+        <div class="card">
+            <div>
+                <div class="numbers">15</div>
+                <div class="cardName">Llamadas Completadas</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <a href="/CLSL/ListadoCompleto" class="btn btn-primary mt-3">Ir</a>
+        </div>
+
+        <!-- Card Llamadas Pendientes -->
+        <div class="card">
+            <div>
+                <div class="numbers">5</div>
+                <div class="cardName">Llamadas Pendientes</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="hourglass-outline"></ion-icon>
+            </div>
+            <a href="/CLSL/PendientesDeAsignar" class="btn btn-primary mt-3">Ir</a>
+        </div>
+
+        <!-- Card Ajuste de Comisiones -->
+        <div class="card">
+            <div>
+                <div class="numbers">--</div>
+                <div class="cardName">Ajuste de Comisiones</div>
+            </div>
+            <div class="iconBx">
+                <ion-icon name="cash-outline"></ion-icon>
+            </div>
+            <a href="/CLSL/AjusteComisiones" class="btn btn-primary mt-3">Ir</a>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

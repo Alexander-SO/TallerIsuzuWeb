@@ -1,0 +1,187 @@
+﻿@model IEnumerable<TallerIsuzuWebApp.Models.SALLComisionesLavadoViewModel>
+
+@{
+    ViewData["Title"] = "Ajuste de Comisiones";
+}
+
+<h1 class="mb-3">Ajuste de Comisiones</h1>
+
+<form id="gridForm">
+    @Html.AntiForgeryToken()
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th style="width:80px;">ID</th>
+                    <th style="width:120px;">DocNumber</th>
+                    <th style="width:120px;">DocStatus</th>
+                    <th style="width:120px;">SrcvCallID</th>
+                    <th style="width:160px;">ItemCode</th>
+                    <th style="width:180px;">Valor Comisión</th>
+                    <th>Técnico Lavado</th>
+                    <th style="width:240px;">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model == null || !Model.Any())
+                {
+                    <tr>
+                        <td colspan="8" class="text-center text-muted">No hay registros para mostrar.</td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var comision in Model)
+                    {
+                        <tr data-row-id="@comision.Id">
+                            <td>@comision.Id</td>
+                            <td>@comision.DocNumber</td>
+                            <td>@comision.DocStatus</td>
+                            <td>@comision.SrcvCallID</td>
+                            <td>@comision.ItemCode</td>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-text">Q</span>
+                                    <input type="number"
+                                           class="form-control valor-comision"
+                                           data-id="@comision.Id"
+                                           value="@(comision.ValorComision.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture))"
+                                           step="0.01"
+                                           min="0.01"
+                                           inputmode="decimal"
+                                           placeholder="0.00" />
+                                </div>
+                            </td>
+                            <td>@comision.LavadoTecnico</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <button type="button"
+                                            class="btn btn-sm btn-primary guardar-cambio"
+                                            data-id="@comision.Id">
+                                        Guardar
+                                    </button>
+                                    <button type="button"
+                                            class="btn btn-sm btn-danger marcar-eliminado"
+                                            data-id="@comision.Id">
+                                        Marcar Eliminado
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</form>
+
+<!-- Toast simple para feedback -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="toastMsg" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2500">
+        <div class="toast-body"></div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            function getCsrf() {
+                return document.querySelector('input[name="__RequestVerificationToken"]')?.value || '';
+            }
+
+            function showToast(message, isOk) {
+                const toastEl = document.getElementById('toastMsg');
+                const body = toastEl.querySelector('.toast-body');
+                body.textContent = message || '';
+                toastEl.classList.remove('text-bg-danger', 'text-bg-success');
+                toastEl.classList.add(isOk ? 'text-bg-success' : 'text-bg-danger');
+                // Bootstrap 5 toast
+                if (typeof bootstrap !== 'undefined' && bootstrap.Toast) {
+                    const toast = bootstrap.Toast.getOrCreateInstance(toastEl);
+                    toast.show();
+                } else {
+                    // Fallback
+                    alert(message);
+                }
+            }
+
+            // Delegación: funciona aunque se re-renderice la tabla
+            $(document).on('click', '.guardar-cambio', function () {
+                const id = Number($(this).data('id'));
+                const $input = $('.valor-comision[data-id="' + id + '"]');
+                const raw = ($input.val() ?? '').toString().trim();
+                const valorComision = parseFloat(raw);
+
+                if (isNaN(valorComision) || valorComision <= 0) {
+                    showToast('Por favor, ingrese un valor válido para la comisión.', false);
+                    $input.focus();
+                    return;
+                }
+
+                // Deshabilitar botones mientras procesa
+                const $row = $('tr[data-row-id="' + id + '"]');
+                const $buttons = $row.find('button');
+                $buttons.prop('disabled', true);
+
+                $.ajax({
+                    url: '@Url.Action("ActualizarComision", "CLSL")',
+                    type: 'POST',
+                    data: JSON.stringify({ id: id, valorComision: valorComision }),
+                    contentType: 'application/json; charset=utf-8',
+                    headers: { 'RequestVerificationToken': getCsrf() },
+                    success: function (r) {
+                        if (r?.success) {
+                            showToast(r.message || 'Comisión actualizada exitosamente.', true);
+                        } else {
+                            showToast(r?.message || 'No se pudo actualizar la comisión.', false);
+                        }
+                    },
+                    error: function (xhr) {
+                        const msg = xhr?.responseJSON?.message || xhr?.responseText || xhr?.statusText || 'Error desconocido';
+                        showToast('Error al actualizar la comisión: ' + msg, false);
+                    },
+                    complete: function () {
+                        $buttons.prop('disabled', false);
+                    }
+                });
+            });
+
+            $(document).on('click', '.marcar-eliminado', function () {
+                const id = Number($(this).data('id'));
+                if (!confirm('¿Está seguro de marcar este registro como eliminado?')) return;
+
+                const $row = $('tr[data-row-id="' + id + '"]');
+                const $buttons = $row.find('button');
+                $buttons.prop('disabled', true);
+
+                $.ajax({
+                    url: '@Url.Action("MarcarEliminado", "CLSL")',
+                    type: 'POST',
+                    data: JSON.stringify({ id: id }),
+                    contentType: 'application/json; charset=utf-8',
+                    headers: { 'RequestVerificationToken': getCsrf() },
+                    success: function (r) {
+                        if (r?.success) {
+                            showToast(r.message || 'Registro marcado como eliminado.', true);
+                            // Opcional: actualizar la celda DocStatus en vez de recargar
+                            const $docStatusCell = $row.children().eq(2);
+                            $docStatusCell.text('EL');
+                            // O recargar toda la página:
+                            // location.reload();
+                        } else {
+                            showToast(r?.message || 'No se pudo marcar como eliminado.', false);
+                        }
+                    },
+                    error: function (xhr) {
+                        const msg = xhr?.responseJSON?.message || xhr?.responseText || xhr?.statusText || 'Error desconocido';
+                        showToast('Error al marcar como eliminado: ' + msg, false);
+                    },
+                    complete: function () {
+                        $buttons.prop('disabled', false);
+                    }
+                });
+            });
+        })();
+    </script>
+}

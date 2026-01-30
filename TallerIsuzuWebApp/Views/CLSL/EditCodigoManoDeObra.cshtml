@@ -1,0 +1,31 @@
+﻿@using System.Security.Claims
+@model TallerIsuzuWebApp.Models.CodigoDeManoDeObraViewModel
+
+@{
+    var userRole = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value ?? "Guest";
+}
+
+<h2>Editar Código de Mano de Obra</h2>
+
+<form asp-action="EditCodigoManoDeObra" asp-controller="CLSL" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="CodigoManoDeObra">Código de Mano de Obra</label>
+        <input type="text" class="form-control" id="CodigoManoDeObra" name="CodigoManoDeObra" value="@Model.CodigoManoDeObra" />
+        <span asp-validation-for="CodigoManoDeObra" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ValorComision">Valor Comisión</label>
+        <input type="number" step="0.01" class="form-control" id="ValorComision" name="ValorComision" value="@Model.ValorComision" />
+    </div>
+    @if (userRole == "Desarrollador")
+    {
+        <div class="form-group">
+            <label for="CondicionesAdicionales">Condiciones Adicionales</label>
+            <textarea class="form-control" id="CondicionesAdicionales" name="CondicionesAdicionales">@Model.CondicionesAdicionales</textarea>
+        </div>
+    }
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="@Url.Action("GestionManoDeObra", "CLSL")" class="btn btn-secondary">Cancelar</a>
+</form>

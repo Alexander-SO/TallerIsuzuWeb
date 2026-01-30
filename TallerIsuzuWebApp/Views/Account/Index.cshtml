@@ -1,0 +1,51 @@
+﻿@model IEnumerable<TallerIsuzuWebApp.Models.UserListItemViewModel>
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h2 class="mb-3">Usuarios</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<div class="mb-3">
+    <a asp-action="CreateUser" class="btn btn-primary">Crear usuario</a>
+</div>
+
+<table class="table table-hover align-middle">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Nombre</th>
+            <th>Role</th>
+            <th>Job Title</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.Id</td>
+                <td>@u.Username</td>
+                <td>@u.Nombre</td>
+                <td>@u.Role</td>
+                <td>@u.JobTitle</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@u.Id" class="btn btn-sm btn-outline-primary">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

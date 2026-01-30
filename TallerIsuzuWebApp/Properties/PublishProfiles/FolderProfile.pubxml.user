@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\TallerIsuzuWebApp\TallerIsuzuWebApp\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-06-11T21:38:58.7601322Z;True|2025-06-11T12:04:19.3833666-06:00;True|2024-12-10T01:33:25.5457898-06:00;True|2024-12-10T01:29:26.8019729-06:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
